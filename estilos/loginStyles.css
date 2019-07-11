@@ -61,7 +61,8 @@ h2 {
 
 i {
     color: #c6c8c7;
-    margin-right: .5em
+    margin-right: .5em;
+    color: #38b593;
 }
 
 h3 {
@@ -84,6 +85,7 @@ form input {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
+    width: 70%;
 }
 
 input:focus {
@@ -240,15 +242,41 @@ input::-webkit-input-placeholder {
 .mobileOnly {
     display: none
 }
+@media (max-width:600px) and (max-height:1300px){
+    form input{
+        font-size: 1.7em;
+        display: inline;
+    }
+    i{
+        font-size: 1.5em;
+        margin-left: 1%;
+        
+    }
+    .btn-header input{
+        font-size: 1.5em;
+    }
+    img[alt="logo"]{
+        width: 150px;
+    }
+    .btn{
+        font-size: 1.4em
+    }
+}
+
 
 @media (max-width: 600px) {
-    body{
-        min-height: 100%
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        
     }
     section {
         flex-direction: column;
         align-items: center;
-        min-height: 100%
+        min-height: initial
     }
     .right-flex-wrapper{
         min-height: 100%
@@ -299,7 +327,7 @@ input::-webkit-input-placeholder {
     .mobileLogo {
         width: 100%;
         text-align: center;
-        padding: 4em 0
+        padding: 0 0 7em 0
     }
     form {
         padding-top: 4% 
@@ -321,8 +349,11 @@ input::-webkit-input-placeholder {
     #registrate .inputWrapper:nth-child(4){
         margin-bottom: 2em
     }
+    .inputWrapper{
+        padding: 5.5%;
+    }
     #ingresar .inputWrapper:nth-child(2){
-        margin-bottom: 2em
+        margin-bottom: 6em
     }
     .right-flex-wrapper{
         height: 100%
